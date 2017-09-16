@@ -4,7 +4,7 @@
 	} 
 
 	button {
-		margin: 5px 5px 5px 5px;
+		margin: 5px;
 	}
 
     #item-form {
@@ -13,10 +13,6 @@
 
     .image-div {
     	float: left;
-/*    	width: 250px;*/
 		margin: 0 5px;
     }
 
-    panel-body {
-    	color: gray;
-    }

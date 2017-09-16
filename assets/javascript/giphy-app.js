@@ -1,7 +1,7 @@
 
       // Initial array of items
       var items = ["monkey", "aardvark", "anteater", "elephant", "kangaroo", "fish", "bird", "bugs bunny", "chameleon", 
-        "wombat", "flying squirrel", "honey bees", "platypus", "sheep", "goat", "pig", "tasmanian devil", "disco", "moose"];
+        "wombat", "flying squirrel", "honey bee", "platypus", "sheep", "goat", "pig", "tasmanian devil", "disco", "moose"];
 
       // displayMovieInfo function re-renders the HTML to display the appropriate content
       function displayItemInfo() {
@@ -35,7 +35,7 @@
           $("#items-view").empty();
 
           for (var i = 0; i < response.data.length; i++) {
-            // Creating a div to hold the item
+            // Create a div to hold the item
             var itemDiv = $("<div class='image-div'>");
 
             var imgURL = response.data[i].images.fixed_height_still.url;
@@ -52,13 +52,10 @@
 
             // Append the image
             itemDiv.append(image);
-
-            // Store the rating data
-            var rating = response.data[i].rating;
-            // Create an element to display it
-            var pOne = $("<p>").text("Rating: " + rating);
-            // Display the rating below the item
-            itemDiv.append(pOne);
+            
+            var rating = response.data[i].rating;           // Store the rating data
+            var pOne = $("<p>").text("Rating: " + rating);  // Create an element to display it
+            itemDiv.append(pOne);                           // Display the rating below the item
 
             // Put the item before the previous item(s)
             $("#items-view").prepend(itemDiv);
