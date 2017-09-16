@@ -1,7 +1,22 @@
 
-    button,
-    div,
-    form,
-    input {
-      margin: 10px;
+	* {
+		box-sizing: border-box;
+	} 
+
+	button {
+		margin: 5px 5px 5px 5px;
+	}
+
+    #item-form {
+    	margin: 5px 0;
+    }
+
+    .image-div {
+    	float: left;
+/*    	width: 250px;*/
+		margin: 0 5px;
+    }
+
+    panel-body {
+    	color: gray;
     }

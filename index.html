@@ -10,12 +10,12 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <!-- Add Bootstrap Themes Here (Just uncomment the ones below for example)-->
-  <link rel="stylesheet" href="https://bootswatch.com/cerulean/bootstrap.min.css">
-  <!-- <link rel="stylesheet" href="https://bootswatch.com/cyborg/bootstrap.min.css"> -->
+  <!-- <link rel="stylesheet" href="https://bootswatch.com/cerulean/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="https://bootswatch.com/cyborg/bootstrap.min.css">
   <!-- <link rel="stylesheet" href="https://bootswatch.com/journal/bootstrap.min.css"> -->
   <!-- Custom styles for this template -->
 
-  <style type="text/css" src="assets/style.css"></style>
+  <!-- <style type="text/css" src="assets/style.css"></style> -->
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
@@ -24,29 +24,37 @@
 
 <body>
 
-  <div class="container">
+  <div class="container text-center">
     <h1>Giphy Search</h1>
 
+  <div class="row">
      <!-- Rendered Buttons will get Dumped Here  -->
-    <div id="buttons-view"></div>
+    <div id="buttons-view" class="col-xs-12 col-sm-8 col-md-9"></div>
 
-    <form id="item-form">
-      <label for="item-input">Add a Category</label>
+    <form id="item-form" class="col-xs-12 col-sm-4 col-md-3">
+      <label for="item-input">Add a category</label>
       <input type="text" id="item-input"><br>
 
       <!-- Button triggers new item to be added -->
-      <input id="add-item" type="submit" value="Add a Category">
+      <input id="add-item" type="submit" value="Submit"  class="btn btn-primary btn-sm">
     </form>
+  </div>  <!-- row -->
 
     <!-- GIFs will Get Dumped Dere -->
-    <div id="items-view"></div>
 
-<!--     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
-    
+  <div class="panel panel-default">
+    <div class="panel-body">
+      <div id="items-view">Click on a button above to get started, then click on a picture - you can add buttons, too</div>
+    </div>
   </div>
+      
+
+  </div>    <!-- container -->
+
   <!-- Note: Script for manipulating DOM must be located after the HTML or there will be no page elements to manipulate -->
   <script type="text/javascript" src="assets/javascript/giphy-app.js"></script>
   <script type="text/javascript" src="assets/javascript/app.js"></script>
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </body>
 
 </html>
