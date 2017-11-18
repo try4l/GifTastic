@@ -5,4 +5,6 @@ Dynamic webpage for GIPHY API
 
 You can add your own categories and click to see more fun GIFs.
 
+Don't forget to click each GIF image to see what happens!
+
 https://try4l.github.io/GifTastic/
